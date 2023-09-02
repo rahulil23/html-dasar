@@ -1,0 +1,81 @@
+/* style*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(../image/back.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+    text-align: center;
+    max-width: 400px;
+}
+
+.login-container h1 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.login-container img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #0f0f0fa2;
+    border-radius: 40px;
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+}
+
+.captcha-container img{
+    width: 100%;
+    height: 40px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: #021529;
+}
+
+.login-container video {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
