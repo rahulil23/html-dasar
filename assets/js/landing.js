@@ -1,3 +1,22 @@
+// Fungsi untuk menampilkan popup
+function showPopup(popupId) {
+  var popup = document.getElementById(popupId);
+  if (popup) {
+      popup.style.display = "block";
+  }
+}
+
+// Fungsi untuk menutup popup
+function closePopup(popupId) {
+  var popup = document.getElementById(popupId);
+  if (popup) {
+      popup.style.display = "none";
+  }
+}
+
+
+
+
 // Ambil elemen-elemen yang diperlukan dari DOM
 const carouselContainer = document.querySelector('.carousel-container');
 const carouselSlides = document.querySelectorAll('.carousel-slide');

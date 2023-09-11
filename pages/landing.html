@@ -37,9 +37,47 @@
                         <h4>kursi sofa</h4>
                         <h5>Rp. 2.000.000,-</h5>
 
-                        <a class="tombol tombol-detail" href="#">Detail</a>
-                        <a class="tombol tombol-beli" href="#">Beli</a>
+                        <a class="tombol tombol-detail" href="#" onclick="showPopup('detail-popup')">Detail</a>
+                        <a class="tombol tombol-beli" href="#" onclick="showPopup('beli-popup')">Beli</a>
 
+                    </div>
+
+                    <!-- Popup Detail -->
+                    <div id="detail-popup" class="popup">
+                        <div class="popup-content">
+                            <h2>Detail Kursi Sofa</h2>
+                            <img src="../assets/image/sofa1.jpeg" alt="kursi sofa">
+                            <p>Kursi sofa ini adalah pilihan yang sempurna untuk kenyamanan dan gaya. Dibuat dengan material berkualitas tinggi, kursi sofa ini tahan lama dan nyaman untuk digunakan.</p>
+                            <p>Fitur Utama:</p>
+                            <ul>
+                                <li>Material: Kain berkualitas tinggi</li>
+                                <li>Warna: Beige</li>
+                                <li>Ukuran: 200cm x 100cm x 80cm</li>
+                            </ul>
+                            <p>Produk ini hadir dengan jaminan kualitas dan akan menjadi tambahan yang sempurna untuk ruang tamu Anda. Dapatkan sekarang dan nikmati kenyamanan yang tak tertandingi.</p>
+                            <button onclick="closePopup('detail-popup')">Tutup</button>
+                        </div>
+                    </div>
+
+                    <!-- Popup Beli -->
+                    <div id="beli-popup" class="popup">
+                        <div class="popup-content">
+                            <h2>Beli Kursi Sofa</h2>
+                            <p>Isi Form Berikut ini.</p>
+                            <form action="/beli-kursi-sofa" method="post">
+                                <label for="nama">Nama:</label>
+                                <input type="text" id="nama" name="nama" required><br>
+
+                                <label for="alamat">Alamat:</label>
+                                <textarea id="alamat" name="alamat" required></textarea><br>
+
+                                <label for="jumlah">Jumlah:</label>
+                                <input type="number" id="jumlah" name="jumlah" required><br>
+
+                                <button type="submit">Beli</button>
+                            </form>
+                            <button onclick="closePopup('beli-popup')">Tutup</button>
+                        </div>
                     </div>
 
                     <div class="list-produk">
