@@ -1,4 +1,12 @@
 /*advance*/
+:root
+{
+    --hitam : #000;
+    --abu   : gainsboro;
+    --pink  : crimson;
+    --border: 10px;
+}
+
 *
 {
     margin: 0;
@@ -11,6 +19,57 @@ body
 {
     background-color: rgba(119, 114, 114, 0.911);
 }
+/* Header styles */
+.hero {
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero content styles */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: var(--border);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/*produk*/
 
 .container
 {
@@ -24,26 +83,26 @@ body
 .container h2
 {
     
-    color: crimson;
-    border-bottom: 1px solid gainsboro;
+    color: var(--pink);
+    border-bottom: 1px solid var(--abu);
     margin: 5px;
     margin-bottom: 13px;
 }
 
 .list-produk
 {
-    border: 1px solid gainsboro;
+    border: 1px solid var(--abu);
     padding: 10px;
     float: left;
     width: 200px;
     margin: 5px;
-    border-radius: 10px;
+    border-radius: var(--border);
 }
 
 .list-produk:hover
 {
     transition-duration: 500ms;
-    box-shadow: 5px 5px gainsboro;
+    box-shadow: 5px 5px var(--abu);
 }
 
 .list-produk img
@@ -52,12 +111,12 @@ body
     height: 175px;
     display: block;
     margin-bottom: 5px;
-    border-radius: 10px;
+    border-radius: var(--border);
 }
 
 .list-produk h4, .list-produk h5
 {
-    color: crimson;
+    color: var(--pink);
     text-align: center;
     margin-bottom: 5px;
 }
@@ -65,7 +124,7 @@ body
 .tombol
 {
     text-decoration: none;
-    border-radius: 7px;
+    border-radius: var(--border);
     padding: 7px;
     display: block;
     float: left;
@@ -77,7 +136,7 @@ body
 
 .tombol:hover
 {
-    background-color: black;
+    background-color: var(--hitam);
     transition-duration: 700ms;
 }
 
@@ -91,6 +150,8 @@ body
     background-color:blue;
 }
 
+
+/*carousel*/
 .carousel-container 
 {
     display: flex;
@@ -108,4 +169,83 @@ body
 .carousel-slide:not(.active)
 {
     display: none;
+}
+
+.carousel-prev,
+.carousel-next 
+{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.carousel-prev
+{
+    float: left;
+}
+
+.carousel-next
+{
+    float: right;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover 
+{
+    background-color: var(--hitam);
+}
+
+/* Gaya CSS untuk konten "Tentang Kami" */
+#about {
+    background-color: rgba(255, 255, 255, 0.39);
+    padding: 60px 0;
+}
+
+#about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Gaya CSS untuk konten "Kontak Kami" */
+#contact {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#contact p.contact-info {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*footer*/
+.footer {
+    /*background-color: #333;*/
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p {
+    font-size: 14px;
 }
