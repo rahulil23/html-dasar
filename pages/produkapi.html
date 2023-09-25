@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/produkapi.css">
+    <title>Produk</title>
+</head>
+<body>
+
+    <!--navbar-->
+    <header id="header" class="hero">
+        <nav>
+            <ul>
+                <li><a href="#header">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#about">Tantang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Selamat Datang Di website RJ Mebel</h1>
+            <p>Elegan  Fungsional  Berkualitas</p>
+            <a href="#signup" class="cta-button">Get Started</a>
+        </div>
+    </header>
+    
+    <!--konten-->
+    <div class="container">
+        <h2 id="produk">Produk Furniture</h2>
+            <div class="carousel-container">
+                <!--slide pertama-->
+                <div class="carousel-slide" id="produk-carousel">
+
+                    <!--isi produk-->
+                    
+                </div>
+
+            
+                <!--slide kedua-->
+                <div class="carousel-slide" id="produk-carousel">
+
+                    
+                </div>
+
+                <!--pop up-->
+                <div id="detail-popup" class="popup">
+                    <div class="popup-content">
+                        <h2>Detail Kursi Sofa</h2>
+                        <img src="../assets/image/sofa1.jpeg" alt="kursi sofa">
+                        <p>Kursi sofa ini adalah pilihan yang sempurna untuk kenyamanan dan gaya. Dibuat dengan material berkualitas tinggi, kursi sofa ini tahan lama dan nyaman untuk digunakan.</p>
+                        <p>Fitur Utama</p>
+                        <ul>
+                            <li>Material  : Kain berkualitas tinggi</li>
+                            <li>Warna     : Beige</li>
+                            <li>Ukuran    : 200cm x 100cm x 80cm</li>
+                        </ul>
+                        <p>Produk ini hadir dengan jaminan kualitas dan akan menjadi tambahan yang sempurna untuk ruang tamu Anda. Dapatkan sekarang dan nikmati kenyamanan yang tak tertandingi.</p>
+                        <button onclick="closePopup('detail-popup')">Tutup</button>
+                    </div>
+                </div>
+
+                <!-- Popup Beli -->
+                <div id="beli-popup" class="popup">
+                    <div class="popup-content">
+                        <h2>Beli Kursi Sofa</h2>
+                        <p>Isi Form Berikut ini.</p>
+                        <form action="/beli-kursi-sofa" method="post">
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" name="nama" required><br>
+
+                            <label for="alamat">Alamat:</label>
+                            <textarea id="alamat" name="alamat" required></textarea><br>
+
+                            <label for="jumlah">Jumlah:</label>
+                            <input type="number" id="jumlah" name="jumlah" required><br>
+
+                            <button type="submit">Beli</button>
+                        </form>
+                        <button onclick="closePopup('beli-popup')">Tutup</button>
+                    </div>
+                </div>
+            </div>
+
+        <button class="carousel-prev">Previous</button>
+        <button class="carousel-next">Next</button>
+    </div>
+
+    <!-- Tentang Kami -->
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah perusahaan mebel yang berkomitmen untuk menyediakan produk-produk mebel berkualitas tinggi dengan desain elegan. Dengan pengalaman bertahun-tahun, kami bangga dapat memenuhi kebutuhan furnitur rumah Anda. Setiap produk kami dibuat dengan cinta dan perhatian terhadap detail untuk memastikan kepuasan pelanggan kami.</p>
+        </div>
+    </section>
+
+    <!-- Kontak Kami -->
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, jangan ragu untuk menghubungi kami. Kami siap membantu Anda.</p>
+            <p class="contact-info">Email   : info@rjmebel.com</p>
+            <p class="contact-info">Telepon : (123) 456-7890</p>
+            <p class="contact-info">Alamat  : Jl. ir Sutami No. 123, Probolinggo</p>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+        <p>&copy; 2023 RJ MEBEL. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="../assets/js/produkapi.js"></script>
+</body>
+</html>
