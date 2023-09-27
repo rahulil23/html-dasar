@@ -81,16 +81,16 @@ button:hover
 }
 
 /* Menambahkan Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     body {
-        align-items: flex-start; /* konten akan sejajar ketika lebar 768*/
+        align-items: flex-start; 
     }
 
     .login-container {
-        max-width: 100%; /* form login akan full layar ketika lebar 768 */
+        max-width: 100%; 
     }
 
     .login-container img {
-        width: 80px; /* gambar akan mengecil ketika lebar 768 */
+        width: 80px; 
     }
 }
